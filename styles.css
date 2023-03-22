@@ -1,0 +1,119 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1.2rem 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    
+}
+.logo__container {
+    cursor: pointer;
+}
+.overlay__img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+}
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+.navlinks li a {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+.navlinks li:hover a {
+    color: rgb(182, 134, 134);
+}
+.social__icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 1.5rem;
+}
+.social__icons > i:hover {
+    color: rgb(182, 134, 134);
+    cursor: pointer;
+}
+.main {
+    color: white;
+    display: flex;
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main h1 {
+    font-size: 3rem;
+    margin: 0;
+
+}
+.main p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+    width: 45%;
+    text-align: center;
+    padding: 1rem 0;
+}
+.main span {
+    color:#57be94 ;
+}
+.btn_container {
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    z-index: 10;
+}
+.btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px 30px;
+    color: white;
+    font-weight: 900;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+.btn__yellow {
+    background-color: #57be94;
+    color: black;
+}
+.btn__opaque {
+    border: 1px solid white;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+}
+ 
