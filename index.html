@@ -226,19 +226,20 @@
             <div class="wrapper">
                 <i class="fas fa-close close__btn"></i>
                 <h2 class="text__heading uppercase">Contact <span class="color">US</span></h2>
-                <div class="form__container">
-                    <div class="flex">
+                <form name="form" class="form__container">
+                    <div action="" class="flex">
                         <div class="input__container">
-                            <input type="text" name="" placeholder="Your Name">
-                            <input type="email" name="" placeholder="Your Email">
-                        <input type="text" name="" placeholder="Your Phone">
+                            <input type="text" name="fullname" placeholder="Your Name">
+                            <input type="email" name="email" placeholder="Your Email">
+                            <input type="text" name="phone" placeholder="Your Phone">
                         </div>
                         <div class="message__container">
-                            <textarea name="" id="" class="message" placeholder="Your Message"></textarea>
+                            <textarea name="message" id="" class="message" placeholder="Your Message"></textarea>
                         </div>
                     </div>
-                    <button class="submit__btn">Submit Form</button>
-                </div>
+                    <p class="response"></p>
+                    <button class="submit__btn" type="submit">Submit Form</button>
+                </form>
             </div>
         </section>
     </div>

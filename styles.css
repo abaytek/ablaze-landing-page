@@ -310,7 +310,7 @@ header {
 .form__container {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1.3rem;
     flex-direction: column;
     padding: 0 2rem;
 }
@@ -355,5 +355,8 @@ header {
     font-weight: 600;
     letter-spacing: 1.3px;
 }
-
+.response {
+    color: rgb(185, 44, 44);
+    margin: 0;
+}
 /* CONTACT END */
