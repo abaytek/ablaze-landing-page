@@ -18,7 +18,7 @@ menus.forEach((btn) => {
 function getMatch(value) {
   menuItems.map((menu) => {
     if (menu === value) {
-      document.getElementById(value).style.display = "flex";
+      document.getElementById(value).style.transform = `translateY(0vh)`;
     }
   });
 }
@@ -26,6 +26,6 @@ function getMatch(value) {
 // CLOSE BUTTON
 closeBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    e.currentTarget.parentElement.parentElement.style.display = "none";
+    e.currentTarget.parentElement.parentElement.style.transform = `translateY(-100vh)`;
   });
 });

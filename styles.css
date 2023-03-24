@@ -116,20 +116,29 @@ header {
     inset: 0;
     z-index: 2;
 }
- 
-/* ABOUT SECTIONS */
-#about {
+
+/* SECTIONS STYLE */
+.section {
     position: absolute;
     inset: 0;
+    transform: translateY(-100vh);
     background: black;
     z-index: 20;
-    display: none;
-    justify-content: center;
     color: white;
     padding: 5rem;
     overflow-y: auto;
     line-height: 1.8;
     font-weight: 400;
+    transition: all 0.8s ease-in-out;
+    scrollbar-width: 0;
+    -webkit-scrollbar-width: 0;
+}
+ 
+/* ABOUT SECTIONS */
+#about {
+    display: flex;
+    justify-content: center;
+    
 }
 .text__heading {
     font-size: 4.2rem;
@@ -140,7 +149,7 @@ header {
 }
 .wrapper {
     width: 100%;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     display: flex;
     height: auto;
@@ -150,9 +159,9 @@ header {
 }
 .close__btn {
     position: fixed;
-    top: 5rem;
-    right: 4rem;
-    font-size: 3rem;
+    top: 2rem;
+    right: 3rem;
+    font-size: 2rem;
     cursor: pointer;
 }
 .about__desc {
@@ -216,42 +225,70 @@ header {
     background-color: #57be94;
 
 }
-
 .value__txt-container{
     padding: 3rem;
 }
+.text__black {
+    color: black;
+}
+.text__left {
+    text-align: left;
+}
+
+
+
+
 
 /* ABOUT END */
 
 /* SPECIALITIES START */
 #specialities {
-    position: absolute;
-    inset: 0;
-    background: black;
-    z-index: 20;
-    display: none;
+    display: flex;
     justify-content: center;
-    color: white;
-    padding: 5rem;
-    overflow-y: auto;
-    line-height: 1.8;
-    font-weight: 400;
+}
+.flex__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.spec__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+.spec__left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+.purpose__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.spec__txt_container {
+    padding: 3rem;
+    margin: 3rem 0;
 }
 /* SPECIALITIES END */
 
+
+
+
+
 /* SERVICES START */
 #services {
-    position: absolute;
-    inset: 0;
-    background: black;
-    z-index: 20;
-    display: none;
+    display: flex;
     justify-content: center;
-    color: white;
-    padding: 5rem;
-    overflow-y: auto;
-    line-height: 1.8;
-    font-weight: 400;
 }
 /* SERVICES END */
 
@@ -259,16 +296,7 @@ header {
 
 /* CONTACT START */
 #contacts {
-    position: absolute;
-    inset: 0;
-    background: black;
-    z-index: 20;
-    display: none;
+    display: flex;
     justify-content: center;
-    color: white;
-    padding: 5rem;
-    overflow-y: auto;
-    line-height: 1.8;
-    font-weight: 400;
 }
 /* CONTACT END */
