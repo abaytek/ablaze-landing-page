@@ -218,6 +218,12 @@ header {
 }
 
 /* Utitlity */
+.flex__1 {
+    flex: 1;
+}
+.uppercase {
+    text-transform: uppercase;
+}
 .color {
     color: #57be94;
 }
@@ -234,12 +240,9 @@ header {
 .text__left {
     text-align: left;
 }
-
-
-
-
-
 /* ABOUT END */
+
+
 
 /* SPECIALITIES START */
 #specialities {
@@ -288,6 +291,11 @@ header {
 /* SERVICES START */
 #services {
     display: flex;
+    justify-content: center;
+}
+.serv__container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 /* SERVICES END */
